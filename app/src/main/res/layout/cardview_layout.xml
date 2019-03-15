@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:theme="@style/AppTheme.LoadingProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pictureProgress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/location_picture"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:src="@drawable/darkerback"
+            android:layout_alignBottom="@id/location_picture"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignBottom="@id/location_picture"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_location"
+            android:text="Location"
+            android:textSize="48dp"
+            android:textStyle="bold"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_country"
+            android:text="Country"
+            android:textSize="16dp"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            android:layout_alignBottom="@id/location_picture"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suggested stay"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"
+            android:layout_below="@+id/location_picture"
+            android:id="@+id/sugg_description" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 days"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/sugg_description"
+            android:layout_below="@id/location_picture"
+            android:id="@+id/item_suggested_duration" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 EUR"
+            android:textStyle="bold"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_below="@id/location_picture"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/zeroeur"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget per day"
+            android:paddingRight="8dp"
+            android:layout_toLeftOf="@id/zeroeur"
+            android:layout_toStartOf="@id/zeroeur"
+            android:layout_below="@id/location_picture"
+            android:id="@+id/budget_description"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sugg_description"
+            android:orientation="horizontal"
+            android:id="@+id/linear1"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relax"
+                android:padding="4dp"/>
+            <RatingBar
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:layout_marginLeft="10dp"
+                style="?android:attr/ratingBarStyleSmall"
+                android:id="@+id/item_relax"
+                android:numStars="5"
+                android:isIndicator="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adventure"
+                android:padding="4dp"
+                android:layout_marginLeft="22dp"/>
+            <RatingBar
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                style="?android:attr/ratingBarStyleSmall"
+                android:id="@+id/item_adventure"
+                android:numStars="5"
+                android:isIndicator="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear1"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Culture"
+                android:padding="4dp"/>
+            <RatingBar
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                style="?android:attr/ratingBarStyleSmall"
+                android:id="@+id/item_culture"
+                android:numStars="5"
+                android:isIndicator="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Social"
+                android:padding="4dp"
+                android:layout_marginLeft="22dp"/>
+            <RatingBar
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:layout_marginLeft="24dp"
+                style="?android:attr/ratingBarStyleSmall"
+                android:id="@+id/item_social"
+                android:numStars="5"
+                android:isIndicator="true"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

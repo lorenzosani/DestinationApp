@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Dreamworld</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="pref_previously_start">false</string>
+    <string name="trip">How much can you spend for the round trip?</string>
+    <string name="one">max 100€</string>
+    <string name="two">max 500€</string>
+    <string name="three">max 200€</string>
+    <string name="four">more than 500€</string>
+    <string name="five">How much is your budget per day?</string>
+    <string name="six">50€</string>
+    <string name="seven">What kind of holiday do you want?</string>
+    <string name="eight">Relax</string>
+
+    <string name="nine">Adventure</string>
+    <string name="ten">Culture</string>
+    <string name="eleven">Social</string>
+    <string name="budget_card">Enter your budget.</string>
+    <string name="rating_card">Enter your preferences.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

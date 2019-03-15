@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.destination.WelcomeFragment"
+    android:background="#A63c768c"
+    android:id="@+id/fragment_welcome">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hey, welcome to Dreamworld!"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/title1"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We will help you find the perfect destination for your holidays."
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/title1"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="12dp">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:buttonTint="@android:color/white"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:id="@+id/indicator1"
+                android:clickable="false"
+                android:checked="true"/>
+
+            <android.support.v7.widget.AppCompatRadioButton
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:buttonTint="@android:color/white"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:id="@+id/indicator2"
+                android:checked="false"
+                android:clickable="false"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/forward_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_forward_white_24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+</FrameLayout>
+
